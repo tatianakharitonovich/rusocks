@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="bootstrap.4.3.1.min.css" />
+    <link rel="stylesheet" href="theme.min.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <title>Banner</title>
+  </head>
+  <body style="background-color: gainsboro">
+    <a
+      href="https://t.me/RuSocksOfficial"
+      target="_blank"
+      class="twpx-banner g-color-white g-font-montserrat g-font-size-14 g-font-weight-700 g-px-16 g-py-16"
+      >
+        <img src="assets/logo.svg" alt="logo" width="32" height="32">
+        <p class="g-my-0">Начни сегодня!</p>
+      </a
+    >    
+    <script>
+      window.addEventListener('load', () => {
+        const banner = document.querySelector('.twpx-banner');
+
+        banner.classList.add('twpx-banner--show');
+
+        setTimeout(() => {
+          banner.classList.add('twpx-banner--button');
+        }, 1500);
+      })
+    </script>
+  </body>
+</html>
